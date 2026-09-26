@@ -3,25 +3,31 @@ import ProjectCard from './ProjectCard.vue'
 
 const projects = [
   {
-    title: 'EcoFloat',
-    description:
-      'A smart floating waste collector designed to help collect floating solid waste from inland waterways.',
-    technologies: ['ESP32', 'IoT', 'Computer Vision', 'Solar Power'],
-    github: 'https://github.com/',
+    title: 'DiLiGaN',
+    problem:
+      'Urban areas lack real-time localized tracking of environmental conditions, soil moisture, and rainfall risks.',
+    solution:
+      'Built an urban monitoring system using multiple sensors to track soil status, water levels, and rain activity.',
+    technologies: ['ESP32', 'IoT', 'Soil Sensor', 'Ultrasonic Sensor', 'Rain Sensor'],
+    github: 'https://github.com/notsoCuteElla',
   },
   {
-    title: 'WHEELGO',
-    description:
-      'A voice-controlled smart wheelchair concept with patient assistance, location monitoring, and emergency caregiver alerts.',
-    technologies: ['ESP32', 'Voice Control', 'GPS', 'IoT'],
-    github: 'https://github.com/',
+    title: 'Durian-Quiamco Dental Clinic',
+    problem:
+      'Dental clinics struggle with manual appointment scheduling, disorganized patient records, and tracking dental histories.',
+    solution:
+      'Developed a comprehensive web-based clinic management system to streamline appointment scheduling, patient records, and monitoring.',
+    technologies: ['HTML', 'CSS', 'Node.js', 'JavaScript'],
+    github: 'https://github.com/notsoCuteElla',
   },
   {
-    title: 'Smart Drainage Monitoring',
-    description:
-      'A multi-sensor monitoring concept designed to distinguish possible drainage clogging from high-water conditions.',
-    technologies: ['ESP32', 'Sensors', 'Web Dashboard', 'Solar Power'],
-    github: 'https://github.com/',
+    title: 'RDCHelp_Desk',
+    problem:
+      'Technical support teams face delays and disorganization when tracking, prioritizing, and resolving user inquiries.',
+    solution:
+      'Built a centralized helpdesk ticketing system designed to log, track, and manage user support requests efficiently.',
+    technologies: ['HTML', 'CSS', 'Node.js', 'JavaScript'],
+    github: 'https://github.com/notsoCuteElla/rdchelp-desk',
   },
 ]
 </script>
