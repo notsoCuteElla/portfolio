@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-matcha-50: #f5f8ed;
+  --color-matcha-100: #e8efd5;
+  --color-matcha-200: #d5e2b5;
+  --color-matcha-300: #bdd394;
+  --color-matcha-400: #a5c473;
+  --color-matcha-500: #8caf5b;
+  --color-matcha-600: #6f9144;
+  --color-matcha-700: #587238;
+  --color-matcha-800: #455a30;
+  --color-matcha-900: #394a2b;
+
+  --color-cream: #faf9f3;
+  --color-dark-green: #243326;
+}
