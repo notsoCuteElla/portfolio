@@ -12,23 +12,23 @@ defineProps<{
 
 <template>
   <article
-    class="flex flex-col rounded-2xl border border-forest-100 bg-white overflow-hidden shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-forest-300"
+    class="flex flex-col rounded-2xl border border-forest-700/50 bg-forest-900/80 backdrop-blur-md overflow-hidden shadow-xl transition-all duration-300 hover:-translate-y-1 hover:border-forest-500/70"
   >
     <!-- Project Preview Image (Optional) -->
-    <div v-if="image" class="h-48 w-full bg-forest-100 overflow-hidden">
+    <div v-if="image" class="h-48 w-full bg-forest-950 overflow-hidden">
       <img
         :src="image"
         :alt="title"
-        class="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+        class="h-full w-full object-cover transition-transform duration-500 hover:scale-105 opacity-90"
       />
     </div>
 
-    <div class="flex flex-1 flex-col p-6">
-      <h3 class="text-xl font-bold text-forest-950">{{ title }}</h3>
+    <div class="flex flex-1 flex-col p-6 text-white">
+      <h3 class="text-xl font-bold text-cream-bg tracking-wide">{{ title }}</h3>
 
-      <div class="mt-4 space-y-2 text-sm text-forest-900/80 flex-1">
-        <p><strong class="font-semibold text-forest-950">Problem:</strong> {{ problem }}</p>
-        <p><strong class="font-semibold text-forest-950">Solution:</strong> {{ solution }}</p>
+      <div class="mt-4 space-y-2 text-sm text-forest-200/90 flex-1 font-light">
+        <p><strong class="font-semibold text-gold-accent">Problem:</strong> {{ problem }}</p>
+        <p><strong class="font-semibold text-gold-accent">Solution:</strong> {{ solution }}</p>
       </div>
 
       <!-- Tech Badges -->
@@ -36,20 +36,20 @@ defineProps<{
         <span
           v-for="tech in technologies"
           :key="tech"
-          class="rounded-md bg-forest-50 px-2.5 py-1 text-xs font-semibold text-forest-800 border border-forest-200/50"
+          class="rounded-md bg-forest-950/60 px-2.5 py-1 text-xs font-semibold text-forest-200 border border-forest-700/60"
         >
           {{ tech }}
         </span>
       </div>
 
       <!-- Action Links -->
-      <div class="mt-6 flex items-center justify-between border-t border-forest-100 pt-4">
+      <div class="mt-6 flex items-center justify-between border-t border-forest-800/80 pt-4">
         <a
           v-if="github"
           :href="github"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-xs font-bold uppercase tracking-wider text-forest-700 hover:text-gold-accent transition"
+          class="text-xs font-bold uppercase tracking-wider text-gold-accent hover:underline transition"
         >
           View Source Code →
         </a>
@@ -58,7 +58,7 @@ defineProps<{
           :href="demo"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-xs font-bold uppercase tracking-wider text-forest-700 hover:text-gold-accent transition"
+          class="text-xs font-bold uppercase tracking-wider text-gold-accent hover:underline transition"
         >
           Live Preview ↗
         </a>

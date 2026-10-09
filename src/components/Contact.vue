@@ -23,15 +23,17 @@
       </p>
 
       <div class="mt-8 flex flex-wrap items-center gap-4">
+        <!-- Fixed Mailto Email Link -->
         <a
-          href="mailto:your-email@example.com"
+          href="mailto:paddananmecaella4@gmail.com"
           class="rounded-xl bg-gold-accent px-8 py-4 font-bold text-forest-950 transition hover:bg-yellow-400 hover:shadow-lg"
         >
           Send an Email
         </a>
 
+        <!-- Fixed GitHub Profile Link with your actual handle -->
         <a
-          href="https://github.com/YOUR_USERNAME"
+          href="https://github.com/NotSoCuteElla"
           target="_blank"
           rel="noopener noreferrer"
           class="rounded-xl border border-forest-700 px-8 py-4 font-bold text-white transition hover:bg-forest-900"

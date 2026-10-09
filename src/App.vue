@@ -22,8 +22,8 @@ import Footer from './components/Footer.vue'
         <source src="/videos/background.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <!-- Dark gradient overlay so all text across the site remains readable -->
-      <div class="absolute inset-0 bg-forest-950/85 backdrop-blur-[2px]"></div>
+      <!-- Balanced opacity overlay set to 65 -->
+      <div class="absolute inset-0 bg-forest-950/65 backdrop-blur-[1px]"></div>
     </div>
 
     <!-- Main Application Flow -->

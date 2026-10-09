@@ -6,8 +6,8 @@ import profileImage from '../assets/profile.jpg'
   <section class="relative flex min-h-screen items-center px-6 pt-28 pb-16 overflow-hidden">
     <!-- Content Container -->
     <div class="relative z-10 mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-12 w-full">
-      <!-- Text & Value Proposition -->
-      <div class="lg:col-span-7 text-white">
+      <!-- Text & Value Proposition (Expanded span for proper text flow) -->
+      <div class="lg:col-span-8 text-white">
         <div
           class="inline-flex items-center gap-2 rounded-full bg-forest-900/80 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-forest-200 mb-6 border border-forest-700/60 shadow-md backdrop-blur-md"
         >
@@ -15,7 +15,10 @@ import profileImage from '../assets/profile.jpg'
           Available for Opportunities
         </div>
 
-        <h1 class="text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl drop-shadow-md">
+        <!-- Adjusted heading sizing to prevent awkward wrapping -->
+        <h1
+          class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight drop-shadow-md leading-none"
+        >
           Meca Ella <br />
           <span class="italic font-serif font-normal text-gold-accent">Paddanan</span>
         </h1>
@@ -44,11 +47,20 @@ import profileImage from '../assets/profile.jpg'
           >
             Get In Touch
           </a>
+
+          <!-- Download CV Button -->
+          <a
+            href="/CV/resumefinal.pdf"
+            download="Meca_Ella_Paddanan_CV.pdf"
+            class="rounded-xl border border-forest-400/30 bg-forest-900/40 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-md transition hover:bg-forest-800 flex items-center gap-2"
+          >
+            <span>📥</span> Download CV
+          </a>
         </div>
       </div>
 
       <!-- Hero Visual Profile -->
-      <div class="relative lg:col-span-5 flex justify-center">
+      <div class="relative lg:col-span-4 flex justify-center">
         <div
           class="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border-2 border-forest-300/40 shadow-2xl shadow-forest-950/60 bg-forest-900/40 backdrop-blur-md"
         >
